@@ -26,14 +26,14 @@
 
 //5. Affiche une multiplication à l'utilisateur et demande lui de la résoudre, si il répond juste félicitez le "la réponse était bien xx" sinon dite lui, à combien d'unité il était de la réponse exemple si la réponse etait 35 et qu'il répont 40 renvoyez lui une alerte avec "C'est dommage, tu n'étais qu'a 5 unité de la bonne réponse"
 
-// alert("Attention, une question très diffile va arriver, sois vif!");
-// let answer = 1936;
-// let math = prompt("44 x 44 = ?");
-// if (math == 1936) {
-//     alert(`la réponse était bien ${answer} !`)
-// } else {
-//     alert(`C'est dommage, tu n'étais qu'a ${answer - math} unité de la bonne réponse`)
-// };
+alert("Attention, une question très diffile va arriver, sois vif!");
+let answer = 1936;
+let math = prompt("44 x 44 = ?");
+if (math == 1936) {
+    alert(`la réponse était bien ${answer} !`)
+} else {
+    alert(`C'est dommage, tu n'étais qu'a ${Math.abs(answer - math)} unité de la bonne réponse`)
+};
 
 //6. Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
 
