@@ -26,14 +26,14 @@
 
 //5. Affiche une multiplication à l'utilisateur et demande lui de la résoudre, si il répond juste félicitez le "la réponse était bien xx" sinon dite lui, à combien d'unité il était de la réponse exemple si la réponse etait 35 et qu'il répont 40 renvoyez lui une alerte avec "C'est dommage, tu n'étais qu'a 5 unité de la bonne réponse"
 
-alert("Attention, une question très diffile va arriver, sois vif!");
-let answer = 1936;
-let math = prompt("44 x 44 = ?");
-if (math == 1936) {
-    alert(`la réponse était bien ${answer} !`)
-} else {
-    alert(`C'est dommage, tu n'étais qu'a ${Math.abs(answer - math)} unité de la bonne réponse`)
-};
+// alert("Attention, une question très diffile va arriver, sois vif!");
+// let answer = 1936;
+// let math = prompt("44 x 44 = ?");
+// if (math == 1936) {
+//     alert(`la réponse était bien ${answer} !`)
+// } else {
+//     alert(`C'est dommage, tu n'étais qu'a ${Math.abs(answer - math)} unité de la bonne réponse`)
+// };
 
 //6. Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
 
@@ -52,19 +52,24 @@ if (math == 1936) {
 
 //7. Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
 
-// let grandNombres = [];
-// let petitNombres = [];
+let grandNombres = [];
+let petitNombres = [];
+let chiffre1 = prompt('votre chiffre');
+let chiffre2 = prompt('votre chiffre');
 
-// do {
-//     let choix = prompt("yo tu peux choisir un chiffre, tu veux quoi?");
-//     if (choix >= 12) {
-//         grandNombres.push(choix);
-//     } else {
-//         petitNombres.push(choix)
-//     };
-//     alert(`tu as ${grandNombres.length} dans ta boite de grand chiffre et ${petitNombres.length} dans ta boite petit nombres.`);
-//     let encore = prompt("veux tu encore rajouter des nombres? Y or N");
-// } while (encore == N);
+if (chiffre1 >= 12 && chiffre2 >= 12) {
+    grandNombres.push(chiffre1, chiffre2)
+} else if (chiffre1 < 12 && chiffre2 < 12) {
+    petitNombres.push(chiffre1, chiffre2)
+} else if (chiffre1 >= 12 && chiffre2 < 12) {
+    grandNombres.push(chiffre1);
+    petitNombres.push(chiffre2)
+} else {
+    grandNombres.push(chiffre2)
+    petitNombres.push(chiffre1)
+}
+
+alert(`votre bac contient ${grandNombres} et ${petitNombres}`)
 
 //8. Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
 
