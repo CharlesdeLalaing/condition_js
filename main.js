@@ -35,21 +35,38 @@
 //     alert(`C'est dommage, tu n'étais qu'a ${answer - math} unité de la bonne réponse`)
 // };
 
-//     6. ### Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
+//6. Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
 
-let tableau = [];
+// let tableau = [];
 
-let choix = prompt("tu peux stocker des bails dans ton coffre, vasy!")
-tableau.push(choix);
-let choix1 = prompt("tu peux encore stocker des bails dans ton coffre, vasy!")
-tableau.push(choix1);
-let choix2 = prompt("tu peux toujours stocker des bails dans ton coffre, vasy!")
-tableau.push(choix2);
+// let choix = prompt("tu peux stocker des bails dans ton coffre, vasy!")
+// tableau.push(choix);
+// let choix1 = prompt("tu peux encore stocker des bails dans ton coffre, vasy!")
+// tableau.push(choix1);
+// let choix2 = prompt("tu peux toujours stocker des bails dans ton coffre, vasy!")
+// tableau.push(choix2);
 
-if (tableau.length == 3) {
-    alert(`tu as trois element dans ton coffre: ${choix}, ${choix1}, ${choix2}`)
-};
+// if (tableau.length == 3) {
+//     alert(`tu as trois element dans ton coffre: ${choix}, ${choix1}, ${choix2}`)
+// };
 
-//     7. ### Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
+//7. Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
 
-//     8. ### Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
+// let grandNombres = [];
+// let petitNombres = [];
+
+// do {
+//     let choix = prompt("yo tu peux choisir un chiffre, tu veux quoi?");
+//     if (choix >= 12) {
+//         grandNombres.push(choix);
+//     } else {
+//         petitNombres.push(choix)
+//     };
+//     alert(`tu as ${grandNombres.length} dans ta boite de grand chiffre et ${petitNombres.length} dans ta boite petit nombres.`);
+//     let encore = prompt("veux tu encore rajouter des nombres? Y or N");
+// } while (encore == N);
+
+//8. Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
+
+
+
